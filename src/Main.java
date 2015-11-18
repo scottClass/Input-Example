@@ -35,7 +35,15 @@ public class Main {
         
         //keep scanning as long as there is something to scan
         while(input.hasNext()) {
-            
+            //creating a class from the file
+            Class c = new Class(input);
+            //adding the class for the list
+            classes.add(c);
+        }
+        
+        for(int i = 0; i < classes.size(); i ++) {
+            Class c = classes.get(i);
+            System.out.println(c.getCourseCode());
         }
         
     }

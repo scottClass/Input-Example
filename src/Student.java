@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -14,6 +17,20 @@ public class Student {
     private boolean isSpecialist;
     private String specialist;
     
+    
+    public Student(Scanner input) {
+        name = input.next();
+        homeRoom = input.next();
+        studentNumber = input.nextInt();
+        String check = input.next();
+        if(check.equals("Y")) {
+            isSpecialist = true;
+            specialist = input.nextLine();
+        } else {
+            isSpecialist = false;
+            input.nextLine();
+        }
+    }
     
     
     /**

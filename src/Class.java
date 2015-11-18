@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +16,19 @@ public class Class {
     private int numStudents;
     private Student[] students;
 
-    
+    public Class(Scanner input) {
+        courseCode = input.nextLine();
+        numStudents = input.nextInt();
+        input.nextLine();
+        students = new Student[numStudents];
+        //create the students
+        for(int i = 0; i < numStudents; i++) {
+            //create a student
+            Student s = new Student(input);
+            //put student in list
+            students[i] = s;
+        }
+    }
     
     
     
@@ -33,5 +48,9 @@ public class Class {
      */
     public int getNumOfStudents() {
         return this.numStudents;
+    }
+    
+    public String getStudentname(int position) {
+        return students[position].getName();
     }
 }
