@@ -17,8 +17,8 @@ public class Class {
     private Student[] students;
 
     public Class(Scanner input) {
-        courseCode = input.nextLine();
         numStudents = input.nextInt();
+        courseCode = input.nextLine();
         input.nextLine();
         students = new Student[numStudents];
         //create the students
