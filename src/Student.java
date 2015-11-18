@@ -1,0 +1,58 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author johns6971
+ */
+public class Student {
+    private String name;
+    private String homeRoom;
+    private int studentNumber;
+    private boolean isSpecialist;
+    private String specialist;
+    
+    
+    
+    /**
+     * 
+     * @return student's name
+     */
+    public String getName() {
+        return this.name;
+    }
+    
+    /**
+     * 
+     * @return student number
+     */
+    public int getStudentNumber() {
+        return this.studentNumber;
+    }
+    
+    /**
+     * 
+     * @return homeroom code
+     */
+    public String getHomeRoom() {
+        return this.homeRoom;
+    }
+    
+    /**
+     * 
+     * @return if student is specialist
+     */
+    public boolean isSpecialist() {
+        return this.isSpecialist;
+    }
+    
+    /**
+     * 
+     * @return specialist type
+     */
+    public String getSpecialist() {
+        return this.specialist;
+    }
+}
